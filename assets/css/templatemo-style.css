@@ -201,7 +201,8 @@ html {
     color: #a43f49;
 }
 
-.menu .copyright-text {
+
+/* .menu .copyright-text {
     position: relative;
     margin-top: 60px;
 }
@@ -214,7 +215,7 @@ html {
     padding-right: 30px;
     padding-top: 30px;
     font-size: 13px;
-}
+} */
 
 .menu:before,
 .menu:after {
@@ -338,7 +339,12 @@ html {
     margin-top: 5px;
     font-size: 16px;
     color: #fff;
+    text-emphasis: #a43f49;
     letter-spacing: 0.5px;
+}
+
+.section-heading span a {
+    color: #a43f49;
 }
 
 
@@ -462,8 +468,8 @@ button:hover {
 }
 
 .service-item .second-service-icon {
-    background: url(../images/logos/illustrator.png) 10% top no-repeat, url(../images/logos/photoshop.png) 50% top no-repeat, url(../images/logos/indesign.png) 90% top no-repeat;
-    background-size: 85px, 85px, 85px;
+    background: url(../images/logos/illustrator.png) 0% top no-repeat, url(../images/logos/photoshop.png) 33% top no-repeat, url(../images/logos/indesign.png) 66% top no-repeat, url(../images/logos/lightroom.png) 100% top no-repeat;
+    background-size: 85px, 85px, 85px, 85px;
 }
 
 .service-item .third-service-icon {
