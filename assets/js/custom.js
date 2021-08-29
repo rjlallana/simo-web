@@ -47,6 +47,9 @@
     $(".hover").mouseleave(function() {
         $(this).removeClass("hover");
     });
+    // https://api.jquery.com/category/selectors/
+    // The hash symbol # means that the element is an ID. So #row would match <div id="row">.
+    // Alternatively, the dot symbol . means the element is a CSS class. So .row would match <div class="row">.
 
     $("#isotope-wrapper").imagesLoaded(function() {
         console.log("images loaded");
@@ -76,4 +79,10 @@
         resizeDuration: 200,
         wrapAround: true
     });
+    window.onload = function() {
+        if (!window.location.hash) {
+            window.location = window.location + '#loaded';
+            window.location.reload();
+        }
+    }
 })(jQuery);
